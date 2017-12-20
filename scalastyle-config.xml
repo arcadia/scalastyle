@@ -26,7 +26,7 @@ limitations under the License.
     </parameters>
   </check>
   <check class="org.scalastyle.file.FileTabChecker" enabled="true" level="error"/>
-  <check class="org.scalastyle.file.HeaderMatchesChecker" enabled="true" level="error">
+  <check class="org.scalastyle.file.HeaderMatchesChecker" enabled="true" level="warn">
     <parameters>
       <parameter name="regex">true</parameter>
       <parameter name="header">/\*
