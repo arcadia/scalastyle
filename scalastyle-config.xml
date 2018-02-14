@@ -18,7 +18,8 @@ limitations under the License.
       <parameter name="maxFileLength">1000</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.file.FileLineLengthChecker" enabled="true" level="error">
+  <!-- conflicts with scalafmt -->
+  <check class="org.scalastyle.file.FileLineLengthChecker" enabled="false" level="error">
     <parameters>
       <parameter name="maxLineLength">100</parameter>
       <parameter name="tabSize">2</parameter>
@@ -75,14 +76,16 @@ limitations under the License.
     </parameters>
     <customMessage>No blank lines before '}'</customMessage>
   </check>
-  <check class="org.scalastyle.file.RegexChecker" enabled="true" level="error">
+  <!-- noise: was spurious in every occurence I reported -->
+  <check class="org.scalastyle.file.RegexChecker" enabled="false" level="error">
     <parameters>
       <parameter name="regex">\bdef\b.+ =\s*(?:/[*/].*)?$</parameter>
       <parameter name="line">true</parameter>
     </parameters>
     <customMessage>Multi-line methods require braces</customMessage>
   </check>
-  <check class="org.scalastyle.file.RegexChecker" enabled="true" level="error">
+  <!-- conflicts with scalafmt -->
+  <check class="org.scalastyle.file.RegexChecker" enabled="false" level="error">
     <parameters>
       <parameter name="regex">^(?!^\s+\* |.*/[*/]).*,\s*(?:/[*/].*)?$</parameter>
       <parameter name="line">true</parameter>
@@ -156,7 +159,7 @@ limitations under the License.
       <parameter name="objectFieldRegex">^[a-zA-Z0-9]+$</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.scalariform.ForBraceChecker" enabled="true" level="error"/>
+  <check class="org.scalastyle.scalariform.ForBraceChecker" enabled="false" level="error"/>
   <check class="org.scalastyle.scalariform.IfBraceChecker" enabled="true" level="error">
     <parameters>
       <parameter name="singleLineAllowed">true</parameter>
