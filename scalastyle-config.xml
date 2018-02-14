@@ -104,7 +104,7 @@ limitations under the License.
       <parameter name="ignoreWhitespaceLines">false</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.scalariform.BlockImportChecker" enabled="true" level="error"/>
+  <check class="org.scalastyle.scalariform.BlockImportChecker" enabled="false" level="error"/>
   <check class="org.scalastyle.scalariform.ClassNamesChecker" enabled="true" level="error">
     <parameters>
       <parameter name="regex">^[A-Z][a-zA-Z0-9]*$</parameter>
