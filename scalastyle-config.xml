@@ -148,7 +148,7 @@ limitations under the License.
   <check class="org.scalastyle.scalariform.EqualsHashCodeChecker" enabled="true" level="error"/>
   <check class="org.scalastyle.scalariform.FieldNamesChecker" enabled="true" level="error">
     <parameters>
-      <parameter name="regex">^[a-z][a-zA-Z0-9]*$</parameter>
+      <parameter name="regex">^[a-zA-Z][a-zA-Z0-9]*$</parameter>
       <parameter name="objectFieldRegex">^[a-zA-Z0-9]+$</parameter>
     </parameters>
   </check>
