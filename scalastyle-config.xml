@@ -202,7 +202,7 @@ limitations under the License.
       <parameter name="ignoreOverride">true</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.scalariform.MultipleStringLiteralsChecker" enabled="true" level="error">
+  <check class="org.scalastyle.scalariform.MultipleStringLiteralsChecker" enabled="true" level="warn">
     <parameters>
       <parameter name="allowed">1</parameter>
       <parameter name="ignoreRegex">^\"\"$</parameter>
