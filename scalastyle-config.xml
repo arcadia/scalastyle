@@ -39,7 +39,8 @@ limitations under the License.
  \*/</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.file.IndentationChecker" enabled="true" level="error">
+  <!-- conflicts with scaladoc docstyle and with scalafmt -->
+  <check class="org.scalastyle.file.IndentationChecker" enabled="false" level="warn">
     <parameters>
       <parameter name="tabSize">2</parameter>
       <parameter name="methodParamIndentSize">2</parameter>
@@ -279,7 +280,7 @@ limitations under the License.
       -->
       <parameter name="ignoreTokenTypes">PatDefOrDcl</parameter>
       <parameter name="ignoreOverride">true</parameter>
-      <parameter name="indentStyle">javadoc</parameter>
+      <parameter name="indentStyle">scaladoc</parameter>
     </parameters>
   </check>
   <check class="org.scalastyle.scalariform.SimplifyBooleanExpressionChecker" enabled="true" level="error"/>
