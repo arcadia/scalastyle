@@ -21,7 +21,7 @@ limitations under the License.
   <!-- conflicts with scalafmt -->
   <check class="org.scalastyle.file.FileLineLengthChecker" enabled="false" level="error">
     <parameters>
-      <parameter name="maxLineLength">100</parameter>
+      <parameter name="maxLineLength">120</parameter>
       <parameter name="tabSize">2</parameter>
       <parameter name="ignoreImports">true</parameter>
     </parameters>
