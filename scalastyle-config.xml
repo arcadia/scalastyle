@@ -316,7 +316,12 @@ limitations under the License.
   </check>
   <check class="org.scalastyle.scalariform.UnderscoreImportChecker" enabled="true" level="error">
     <parameters>
-      <!-- <parameter name="ignoreRegex">collection\.JavaConverters\._|concurrent\.duration\._</parameter> -->
+       <!-- allowed ones:
+           converters
+           duration
+           quill's ctx._
+      -->
+      <parameter name="ignoreRegex">collection\.JavaConverters\._|concurrent\.duration\._|ctx\._</parameter>
     </parameters>
   </check>
   <check class="org.scalastyle.scalariform.UppercaseLChecker" enabled="true" level="error"/>
