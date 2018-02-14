@@ -55,7 +55,7 @@ limitations under the License.
     </parameters>
     <customMessage>No double blank lines</customMessage>
   </check>
-  <check class="org.scalastyle.file.RegexChecker" enabled="true" level="error">
+  <check class="org.scalastyle.file.RegexChecker" enabled="true" level="warn">
     <parameters>
       <parameter name="regex">(?m)\{\s*$\r?\n^\s*$\r?\n^</parameter>
       <parameter name="line">false</parameter>
