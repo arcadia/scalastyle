@@ -21,7 +21,7 @@ limitations under the License.
   <!-- conflicts with scalafmt -->
   <check class="org.scalastyle.file.FileLineLengthChecker" enabled="false" level="error">
     <parameters>
-      <parameter name="maxLineLength">100</parameter>
+      <parameter name="maxLineLength">120</parameter>
       <parameter name="tabSize">2</parameter>
       <parameter name="ignoreImports">true</parameter>
     </parameters>
@@ -30,20 +30,10 @@ limitations under the License.
   <check class="org.scalastyle.file.HeaderMatchesChecker" enabled="true" level="warn">
     <parameters>
       <parameter name="regex">true</parameter>
-      <parameter name="header">/\*
- \* Copyright (?:20\d{2}-)?20\d{2} Marconi Lanna
- \*
- \* Licensed under the Apache License, Version 2\.0 \(the "License"\);
- \* you may not use this file except in compliance with the License\.
- \* You may obtain a copy of the License at
- \*
- \*    http://www\.apache\.org/licenses/LICENSE-2\.0
- \*
- \* Unless required by applicable law or agreed to in writing, software
- \* distributed under the License is distributed on an "AS IS" BASIS,
- \* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied\.
- \* See the License for the specific language governing permissions and
- \* limitations under the License\.
+       <parameter name="header">/\*
+ \* Copyright (?:20\d{2}-)?20\d{2} Arcadia Solutions, LLC. All rights reserved.
+ \* Unauthorized copying of this file, via any medium, is strictly prohibited.
+ \* This source code or document is proprietary and confidential.
  \*/</parameter>
     </parameters>
   </check>
@@ -326,7 +316,12 @@ limitations under the License.
   </check>
   <check class="org.scalastyle.scalariform.UnderscoreImportChecker" enabled="true" level="error">
     <parameters>
-      <!-- <parameter name="ignoreRegex">collection\.JavaConverters\._|concurrent\.duration\._</parameter> -->
+       <!-- allowed ones:
+           converters
+           duration
+           quill's ctx._
+      -->
+      <parameter name="ignoreRegex">collection\.JavaConverters\._|concurrent\.duration\._|ctx\._</parameter>
     </parameters>
   </check>
   <check class="org.scalastyle.scalariform.UppercaseLChecker" enabled="true" level="error"/>
