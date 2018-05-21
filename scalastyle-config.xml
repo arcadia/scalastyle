@@ -165,8 +165,8 @@ limitations under the License.
       <parameter name="exemptImports">scala.collection.mutable</parameter>
     </parameters>
   </check>
-  <check class="org.scalastyle.scalariform.ImportGroupingChecker" enabled="true" level="error"/>
-  <check class="org.scalastyle.scalariform.ImportOrderChecker" enabled="true" level="error">
+  <check class="org.scalastyle.scalariform.ImportGroupingChecker" enabled="true" level="warn"/>
+  <check class="org.scalastyle.scalariform.ImportOrderChecker" enabled="false" level="warn">
     <parameters>
       <parameter name="groups">PROJECT,com,net,org,others,play,scala,java,javax</parameter>
       <parameter name="group.PROJECT">PROJECT\..+</parameter>
